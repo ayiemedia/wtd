@@ -87,5 +87,12 @@
 <script src='https://chat.openai.com/c/script.js'></script>
 <script  src="https://ayiemedia.github.io/wtd/skrip.js"></script>
 
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('https://ayiemedia.github.io/wtd/sw.js')
+  }
+</script>
+
+
 </body>
 </html>
