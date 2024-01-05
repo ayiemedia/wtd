@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbbbbb;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    margin-top: 10px;
+}
+
+#priorityBoxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.priority-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 9px 0px #000000;
+    -webkit-box-shadow: 5px 5px 9px 0px #000000;
+    -moz-box-shadow: 5px 5px 9px 0px #000000;
+}
+
+.priority-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.priority-box th, .priority-box td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.completedTasksSection {
+    margin-top: 20px;
+}
+
+.completedTasksSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.completedTasksSection h2 {
+    text-align: center;
+}
+
+#completeOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#lowBox {
+    background-color: #FFFFED;
+}
+
+#mediumBox {
+    background-color: #cefad0;
+}
+
+#highBox {
+    background-color: #ffcccb;
+}
+
+#addButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#addButton:hover {
+    background-color: #45a049;
+}
+
+/* Style for the Edit and Delete buttons */
+.edit-button, .delete-button {
+    background-color: #f8f8f8;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #ddd;
+}
+
+/* Style for the Complete button in the overlay */
+#completeButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#completeButton:hover {
+    background-color: #45a049;
+}
+
+/* Style for the Cancel button in the overlay */
+#cancelButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#cancelButton:hover {
+    background-color: #d32f2f;
+}

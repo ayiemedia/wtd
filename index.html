@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>What</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/ZSJC2w5/144.png">
+  <link rel='stylesheet' href='https://chat.openai.com/c/styles.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+    <div class="container">
+        <h1>What To Do</h1>
+        <div class="input-container">
+            <input type="text" id="todoInput" placeholder="Add a new task">
+            <select id="prioritySelect">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <label for="dueDateInput">Due Date:</label>
+            <input type="date" id="dueDateInput">
+            <button id="addButton">Add</button>
+        </div>
+    </div>
+
+    <div id="priorityBoxes">
+        <div id="lowBox" class="priority-box">
+            <h2>Low Priority</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Task</th>
+                        <th># of Days</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="lowTasks"></tbody>
+            </table>
+        </div>
+        <div id="mediumBox" class="priority-box">
+            <h2>Medium Priority</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Task</th>
+                        <th># of Days</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="mediumTasks"></tbody>
+            </table>
+        </div>
+        <div id="highBox" class="priority-box">
+            <h2>High Priority</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Task</th>
+                        <th># of Days</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="highTasks"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="completeOverlay" style="display: none;">
+        <div class="overlay-content">
+            <span id="taskName"></span>
+            <button id="completeButton">Complete</button>
+            <button id="cancelButton" onclick="hideOverlay()">Cancel</button>
+        </div>
+    </div>
+    
+    <script src="skrip.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script src='https://chat.openai.com/c/script.js'></script>
+<script  src="./skrip.js"></script>
+
+</body>
+</html>
